@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!-- author: George Tsang -->
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Perl CGI POST</title>  
+
+	<style type="text/css">   
+
+	body
+	{
+		color: #000;
+		font-family: calibri;
+	}
+	h1, h2, h3, h4, h5, h6
+    {
+        text-align: center;
+    }
+	#container
+	{
+		margin: 0 auto;
+		width: 20%;
+	}
+	</style>
+	
+</head>
+
+<body>	  
+
+	<form method="POST" action="http://zenit.senecac.on.ca/~george.tsang/cgi-bin/examples/blackboard/cgi/PerlCGI.plx">
+	
+		<header role="banner">
+			<h1>Perl CGI POST</h1>
+		</header>
+
+		<main role="main">
+			
+			<article id="container">
+				
+				<h3>&nbsp;</h3>
+
+				<p>First name: <input type="text" name="FirstName" value="Donald"></p>
+				<p>Last name: <input type="text" name="LastName" value="Duck"></p>
+				
+				<input id="chkAppliancesDryer" name="chkAppliances" type="checkbox" value="Dryer" /><span id="sDryer">Dryer</span><br />
+				<input id="chkAppliancesDishWasher" name="chkAppliances" type="checkbox" value="Dish Washer" /><span id="sDishWasher">Dish Washer</span><br />
+				<input id="chkAppliancesFreezer" name="chkAppliances" type="checkbox" value="Freezer" /><span id="sFreezer">Freezer</span><br />
+				<br />
+				
+				<input id="rdoAutoAcuraNSX" name="rdoAutomobiles" type="radio" value="Acura NSX" /><span id="sAcuraNSX">Acura NSX</span><br />
+				<input id="rdoAudiTT" name="rdoAutomobiles" type="radio" value="Audi TT" /><span id="sAudiTT">Audi TT</span><br />
+				<input id="rdoAutoCorvetteZ06" name="rdoAutomobiles" type="radio" value="Corvette Z06" /><span id="sCorvetteZ06">Corvette Z06</span><br />
+				<br />
+				
+				<select id="selPerformance" name="selPerformance" size="1">
+					<option value="Outstanding">Outstanding</option>
+					<option value="Much better than expected">Much better than expected</option>
+					<option value="Above average">Above average</option>
+					<option value="Fully satisfactory">Fully satisfactory</option>
+					<option value="Can stand some improvement">Can stand some improvement</option>
+					<option value="Unacceptable">Unacceptable</option>
+					<option value="Failed miserably">Failed miserably</option>
+				</select>
+				<br />
+				<br />				
+				<input type="submit" value="Submit">
+			</article>
+
+		</main>
+
+		<footer id="description" role="contentinfo">
+			<p id="shortDesc">&nbsp;</p>
+		</footer>
+
+	</form>
+		
+</body>
+
+</html>

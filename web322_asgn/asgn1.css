@@ -1,0 +1,51 @@
+header {
+	text-align: center;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+#rbtn_container {
+	position: absolute;
+	float: left;
+	top: 20%;
+	width: 50%;
+}
+form {
+	
+	padding-left: 200px;
+	font-weight: bold;
+	font-size: x-large;
+	text-align: left;
+	
+}
+
+#img_container {
+	position: absolute;
+	right: 0;
+	top: 20%;
+	width: 50%;
+}
+
+#p_desc {
+	margin-left:10%;
+	width: 300px;
+    text-align: center;
+}
+	
+
+footer {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	bottom: 1vh;
+	
+}
+img {
+    margin-left:10%;
+	height: auto;
+    width: 300px;
+}
+
+main {
+	bottom: 0px;
+}

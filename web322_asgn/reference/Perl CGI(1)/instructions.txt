@@ -1,0 +1,9 @@
+Instructions
+
+The Perl CGI file must first be uploaded to your cgi-bin folder or its subfolder
+
+The two HTML files can both be invoked  
+1. directly from your own machine or 
+2. from the zenit web server after uploading to your public_html folder
+
+The Perl CGI can be invoked by clicking the submit button from either HTML web page

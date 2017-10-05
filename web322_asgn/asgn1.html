@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<head>
+  <title>WEB322 Assignment 1 _ </title>
+  <link rel="stylesheet" href="asgn1.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+
+<body>
+<header>
+WEB 322 Assignment 1
+</header>
+	<main>
+			
+ 
+		<div id="rbtn_container">
+			<form id="sending" action="">
+				<input id="atari" type="radio" name="model" value="atari"> atari <br>
+				<input id="galaxys8" type="radio" name="model" value="galaxys8"> galaxys8 <br>
+				<input id="ipad" type="radio" name="model" value="ipad"> ipad <br>
+				<input id="macintoshclassic" type="radio" name="model" value="macintoshclassic"> macintoshclassic <br>
+				<input id="msx" type="radio" name="model" value="msx"> msx <br>
+				<input id="tandy_trs80" type="radio" name="model" value="tandy_trs80"> tandy_trs80 <br>
+				
+				<br>
+				<input type="submit" value="submit">
+			</form> 
+		</div>
+	
+		<div id="img_container">
+			<div class="image-rotate" id="img-atari">
+				<img src="images/atari.jpg" alt="NO IMAGE" id="im">
+			</div>
+		</div>
+		
+
+	<script> $(document).ready(function(){
+			$("#sending").submit(function( event ) {
+			$("#im").attr("src", "images/ipad.jpg");
+			alert("aaaaaaaaaaaaaaa");
+			});
+});
+ </script>
+	</main>
+	
+		<footer>
+			Name: Jin Lee<br>
+			Student Number: 123456789
+		</footer>
+	</main>
+</body>
+</html>

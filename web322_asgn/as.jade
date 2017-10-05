@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    head
+      title WEB322 Assignment 1 _ 
+      link(rel='stylesheet', href='asgn1.css')
+      script(src='https://code.jquery.com/jquery-1.10.2.js')
+  body
+    header
+      | WEB 322 Assignment 1
+    main
+      #rbtn_container
+        form#sending(action='')
+          input#atari(type='radio', name='model', value='atari')
+          |  atari 
+          br
+          input#galaxys8(type='radio', name='model', value='galaxys8')
+          |  galaxys8 
+          br
+          input#ipad(type='radio', name='model', value='ipad')
+          |  ipad 
+          br
+          input#macintoshclassic(type='radio', name='model', value='macintoshclassic')
+          |  macintoshclassic 
+          br
+          input#msx(type='radio', name='model', value='msx')
+          |  msx 
+          br
+          input#tandy_trs80(type='radio', name='model', value='tandy_trs80')
+          |  tandy_trs80 
+          br
+          br
+          input(type='submit', value='submit')
+      #img_container
+        #img-atari.image-rotate
+          img#im(src='images/atari.jpg', alt='NO IMAGE')
+      script.
+        $(document).ready(function(){
+        $("#sending").submit(function( event ) {
+        $("#im").attr("src", "images/ipad.jpg");
+        alert("aaaaaaaaaaaaaaa");
+        });
+        });
+    footer
+      | Name: Jin Lee
+      br
+      | 			Student Number: 123456789
